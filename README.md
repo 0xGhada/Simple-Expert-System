@@ -39,7 +39,7 @@
  #### **If You can't find your Disease that will appear**<br>
  <img src="Screenshots/No-Diseeas.png" alt="main Window" width="800"/><br>
  --------
-## Refrance
+## Reference
 > Many thanks for this repository
 [expert-system by RaniaRekik](https://github.com/RaniaRekik/expert-system)
  
