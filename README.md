@@ -9,7 +9,7 @@
  - open CMD 
  - write ```pip install experta``` 
  - write ```pip install tk```   
- - make clone this project and make sure that you install ``git`` in your PC
+ - make clone this project and make sure that you have installed ``git`` in your PC
  - then write in command prompet (CMD) ```git clone (https://github.com/0xGhada/Simple-Expert-System.git)```
  - then open your IDE and ```run```project 
  > make sure that You open file ```GUIeye.py```of the project to show GUi and interact with it ... enjoy! 
