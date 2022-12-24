@@ -33,9 +33,6 @@ def detectDisease():
 
     return expertSystem.diseases, expertSystem.description, expertSystem.photo
 
-
-
-
 # the window that is responsible about  showing  eye disease
 def openNewWindow():
 
@@ -46,9 +43,7 @@ def openNewWindow():
 
     # A Label widget to show in toplevel
     tk.Label(newWindow, text ="Eye diseases",font=('Times',18,'bold')).pack()
-
     name, description, photo = detectDisease()
-
     if name == description == photo == '':
         name = 'Unfortunately, we could not find your eye diseases.'
         photo = r'.\photo\no.jpg'
@@ -58,23 +53,20 @@ def openNewWindow():
     canvas.pack()
     canvas.create_image(500, 300, anchor=tk.CENTER, image=img)
     canvas.img = img
-    
     # name diesease
     tk.Label(newWindow, text =str(name),font=('Times',14,'bold')).place(relx=0.5,
                        rely=0.7,
                        anchor='center')
-
-
     # description
     tk.Label(newWindow, text =str(description),font=('Times',11,'bold') ).place(relx=0.5,
                        rely=0.8,
                        anchor='center')
 
-
 # the main window for selecting Symptoms
 background = "#C6E2FF"
 source = tk.Tk()
 source.title("Eye Disease")
+source.geometry("1500x900")
 source.config(bg=background)
 source.resizable(True, True)
 
@@ -108,7 +100,7 @@ l1 = tk.Label(source, text="Welcome to The Expert System ", width=40,
               fg='#DE2132', bg=background,  font=fontStyle)
 l1.grid(row = 0, column = 1, pady = 0, padx=3 )
 
-l1 = tk.Label(source, text="  For Diagnosting Eye Diseases", width=40,
+l1 = tk.Label(source, text="  For Diagnosing Eye Diseases", width=40,
               fg='#cd2731',    bg=background,  font=fontStyle)
 l1.grid(row = 1, column = 1, pady = 0, padx=3 )
 
@@ -124,12 +116,12 @@ tk.Label(source, text="Do you experience itching and burning on your eyes? ",
 
 c1 = tk.Checkbutton(source, text = "No", variable= itching,  onvalue=0 ,bg= background)
 c1.grid(row = 3, column = 0)
-
+# c1.deselect()
 c2= tk.Checkbutton(source, text = "Yes", variable = itching,
                    onvalue=1,
 bg=background)
 c2.grid(row = 4, column = 0)
-
+# c2.deselect()
 #Q2 blurring
 tk.Label(source, text="Do you experience a blurring vision? ",
          width=40, bg=background, font=fontTipo).grid(row = 5, column = 0)
