@@ -105,7 +105,7 @@ class eyeDisease(KnowledgeEngine):
                   nausea='0'), Fact(dilated='0'), Fact(eyelid='0'),
 
               ))
-    def night_blindness(self):
+    def Diabetic_retinopathy(self):
         self.diseases = "Diabetic retinopathy"
         self.description = "Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye ."
         self.photo = r".\photo\diabetic.jpg"
@@ -121,7 +121,7 @@ class eyeDisease(KnowledgeEngine):
                   nausea='0'), Fact(dilated='0'), Fact(eyelid='0'),
 
               ))
-    def night_blindness(self):
+    def Trachoma(self):
         self.diseases = "Trachoma"
         self.description = "Trachoma is a microbial infection of the eye, caused due to the bacterium Chlamydia trachomatis. It is a contagious disease."
         self.photo = r".\photo\Trachoma.jpg"
@@ -136,7 +136,7 @@ class eyeDisease(KnowledgeEngine):
                   nausea='0'), Fact(dilated='0'), Fact(eyelid='0'),
 
               ))
-    def night_blindness(self):
+    def Refractive_errors(self):
         self.diseases = "Refractive errors"
         self.description = "Refractive error is a common eye disorder. Refractive error, in understandable technical terms means that the eye cannot reflect the light properly. Therefore, the vision on the respective side becomes blurry ."
         self.photo = r".\photo\Refractive-errors.jpg"
